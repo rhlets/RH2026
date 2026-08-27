@@ -9,16 +9,11 @@
 <style>
 
 :root{
-  /* Surfaces & borders — Max cosmos gray scale */
   --bg:#F6F9FC;--surface:#FFF;--surface2:#F6F9FC;--border:#DBE4ED;
-  /* Text — Dark Matter → Comet */
   --t1:#192733;--t2:#3E5974;--t3:#516F90;--t4:#7691AD;
-  /* Brand — Max red / Solaris orange */
   --orange:#F93846;--orange2:#FF5C35;--orange-bg:#FFF1F1;--orange-ring:#FFBCBD;
-  /* Status — Fresh Leaf green / Brezel yellow */
   --green:#45893D;--green-bg:#ECF3EC;--green-ring:#AED7AC;
   --amber:#B25A0E;--amber-bg:#FEF6E1;--amber-ring:#FFD189;
-  /* Accents — Pier 39 blue / Kreuzberg purple */
   --blue:#2F75A0;--purple:#545AD4;--pink:#C026D3;--teal:#2F75A0;
   --r:12px;--sh:0 1px 2px rgba(25,39,51,.04);
   --font:'Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
@@ -35,8 +30,6 @@ input[type=number]::-webkit-inner-spin-button{opacity:.4}
 select option{background:#FFF}
 button{font-family:var(--font);cursor:pointer;transition:filter .12s}
 button:hover{filter:brightness(.93)}
-
-/* HEADER */
 .header{background:#FFF;border-bottom:1px solid var(--border);padding:14px 32px;display:flex;align-items:center;gap:18px;position:sticky;top:0;z-index:10;box-shadow:0 1px 8px rgba(20,50,80,.07);width:100%}
 .logo-mark{width:40px;height:40px;border-radius:10px;overflow:hidden;flex-shrink:0;box-shadow:0 2px 8px rgba(255,92,53,.28)}
 .logo-mark img{width:100%;height:100%;display:block;object-fit:cover}
@@ -54,59 +47,37 @@ button:hover{filter:brightness(.93)}
 .h-pct{text-align:right}
 .h-pct-label{font-size:9px;color:var(--t4);font-weight:700;letter-spacing:.08em}
 .h-pct-num{font-size:20px;font-weight:800;color:var(--orange);line-height:1}
-
-/* NAV */
 .nav{background:#FFF;border-bottom:1px solid var(--border);padding:0 32px;display:flex;position:sticky;top:65px;z-index:9;width:100%}
 .tab-btn{padding:11px 17px;background:none;border:none;border-bottom:2px solid transparent;color:var(--t3);font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
 .tab-btn:hover{color:var(--t2)}
 .tab-btn.active{color:var(--orange);border-bottom-color:var(--orange)}
-
-/* CONTENT */
 .content{padding:24px 32px;width:100%}
-
-/* CARD */
 .card{background:#FFF;border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh)}
-
-/* CHIP */
 .chip{display:inline-flex;align-items:center;font-size:11px;font-weight:600;border-radius:20px;padding:3px 10px;line-height:1;white-space:nowrap;border:1px solid}
-
-/* PROGRESS BAR */
 .pbar-wrap{background:#EAF0F6;border-radius:99px;overflow:hidden}
 .pbar-fill{border-radius:99px;transition:width .4s}
-
-/* STAT CARD */
 .stat-card{padding:20px 22px;border-top:3px solid}
-
-/* GRID */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .grid-1-2{display:grid;grid-template-columns:1fr 2fr;gap:16px}
 .grid-auto{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
-
-/* TASK ROWS */
 .task-row{border-bottom:1px solid #EAF0F6;transition:background .2s}
 .task-row.is-done{background:#F7F9F7}
 .task-content{display:flex;align-items:center;gap:10px;padding:12px 18px;flex-wrap:wrap}
 .task-desc-box{display:none;padding:0 18px 14px 52px}
 .task-desc-box.open{display:block}
-
-/* ACCORDIONS */
 .acc-header{display:flex;align-items:center;gap:12px;padding:13px 18px;cursor:pointer;background:#FFF;border-bottom:1px solid transparent;user-select:none}
 .acc-header.open{background:#F6F9FC;border-bottom-color:#EAF0F6}
 .acc-arrow{transition:transform .2s;font-size:14px;color:var(--t4);line-height:1;margin-left:2px}
 .acc-header.open .acc-arrow{transform:rotate(90deg)}
 .acc-body{display:none}
 .acc-body.open{display:block}
-
-/* FORMS */
 .filter-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .finput{background:#FFF;border:1px solid var(--border);border-radius:8px;color:var(--t2);font-size:12px;padding:8px 12px;font-family:var(--font);outline:none}
 .finput:focus{border-color:var(--orange)}
 .date-input{background:var(--surface2);border:1px solid var(--border);border-radius:8px;font-size:11px;padding:4px 9px;font-family:var(--font);cursor:pointer;outline:none;color:var(--t4)}
 .date-input.has-date{color:#BD0E21;border-color:#FEA081}
 .status-btn{display:inline-flex;align-items:center;gap:5px;padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;font-family:var(--font);white-space:nowrap;line-height:1;border:1px solid}
-
-/* KPI STYLES */
 .kpi-row{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid #EAF0F6;flex-wrap:wrap;transition:background .2s}
 .kpi-row.kpi-ok{background:#F7F9F7}
 .kpi-text{flex:1;min-width:200px;font-size:13px;color:var(--t2);line-height:1.4}
@@ -120,8 +91,6 @@ button:hover{filter:brightness(.93)}
 .kpi-toggle.achieved{color:#396731;background:#ECF3EC;border-color:#AED7AC}
 .kpi-toggle.pending{color:var(--amber);background:var(--amber-bg);border-color:var(--amber-ring)}
 .kpi-status-chip{font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid;white-space:nowrap}
-
-/* DETAIL SECTIONS */
 .detail-section{margin-bottom:20px}
 .detail-section-title{font-size:11px;font-weight:700;color:var(--t4);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
 .info-box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
@@ -130,8 +99,6 @@ button:hover{filter:brightness(.93)}
 .bullet-dot{font-size:9px;margin-top:4px;flex-shrink:0}
 .kpi-card-d{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--t2);line-height:1.4}
 .goal-item{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;border-radius:8px;margin-bottom:6px}
-
-/* TIMELINE */
 .timeline-wrap{overflow-x:auto;padding-bottom:16px}
 .tl-month-row,.tl-week-row{display:flex;padding-left:220px}
 .tl-month-cell{font-size:10px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.07em;border-left:1px solid var(--border);padding-left:6px}
@@ -143,12 +110,8 @@ button:hover{filter:brightness(.93)}
 .tl-legend{display:flex;gap:20px;padding-left:220px;margin-top:12px;flex-wrap:wrap}
 .tl-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t3)}
 .tl-legend-color{width:20px;height:6px;border-radius:3px}
-
-/* RESPONSIVE */
 @media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.grid-4,.grid-2,.grid-1-2{grid-template-columns:1fr}.header{flex-wrap:wrap;gap:10px}.h-stats{gap:14px}.tab-btn{padding:10px 12px;font-size:12px}.content{padding:16px}}
-
-/* MODAL */
 .modal-overlay{position:fixed;inset:0;background:rgba(10,30,50,.55);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
 .modal-box{background:#FFF;border-radius:18px;padding:36px;width:380px;box-shadow:0 24px 64px rgba(0,0,0,.18);animation:modalIn .18s ease}
 @keyframes modalIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
@@ -163,21 +126,15 @@ button:hover{filter:brightness(.93)}
 .modal-btn:hover{filter:brightness(.92)}
 .modal-btn-cancel{background:#F2F6FA;color:var(--t3)}
 .modal-btn-ok{background:var(--orange);color:#FFF}
-
-/* LOCK BUTTON */
 .lock-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;font-family:var(--font);cursor:pointer;border:1.5px solid;transition:all .15s;white-space:nowrap}
 .lock-btn.locked{color:var(--t3);background:#F2F6FA;border-color:var(--border)}
 .lock-btn.locked:hover{border-color:var(--orange);color:var(--orange)}
 .lock-btn.unlocked{color:#396731;background:#ECF3EC;border-color:#AED7AC}
 .save-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);display:inline-block;animation:pulse 1s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-
-/* LOCKED STATE — interactive elements dimmed */
 body.locked .status-btn,body.locked .kpi-toggle,body.locked .date-input{opacity:.5;cursor:not-allowed;pointer-events:none}
 body.locked .kpi-input{opacity:.5;cursor:not-allowed;background:#F2F6FA}
 body.locked .status-btn::after{content:' 🔒';font-size:9px}
-
-/* UTILS */
 .flex{display:flex}.flex-col{display:flex;flex-direction:column}
 .items-center{align-items:center}.items-start{align-items:flex-start}
 .justify-between{justify-content:space-between}.flex-1{flex:1}
@@ -196,31 +153,6 @@ body.locked .status-btn::after{content:' 🔒';font-size:9px}
 .nowrap{white-space:nowrap}.lh-14{line-height:1.4}
 .hint-box{font-size:11px;color:var(--t4);background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:8px 14px;margin-bottom:16px}
 .section-label{font-size:11px;font-weight:700;color:var(--t4);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
-
-
-/* MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(10,30,50,.55);z-index:200;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
-.modal-box{background:#FFF;border-radius:18px;padding:36px;width:380px;box-shadow:0 24px 64px rgba(0,0,0,.18);animation:modalIn .18s ease}
-@keyframes modalIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
-.modal-icon{font-size:28px;margin-bottom:10px}
-.modal-title{font-size:17px;font-weight:800;color:var(--t1);margin-bottom:6px}
-.modal-desc{font-size:13px;color:var(--t3);line-height:1.5;margin-bottom:22px}
-.modal-input{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:14px;font-family:var(--font);outline:none;color:var(--t1);margin-bottom:6px;transition:border-color .15s}
-.modal-input:focus{border-color:var(--orange)}
-.modal-error{font-size:12px;color:#BD0E21;margin-bottom:10px;display:none}
-.modal-btns{display:flex;gap:10px;margin-top:4px}
-.modal-btn{flex:1;padding:11px;border-radius:9px;font-size:13px;font-weight:700;font-family:var(--font);cursor:pointer;border:none;transition:filter .12s}
-.modal-btn:hover{filter:brightness(.92)}
-.modal-btn-cancel{background:#F2F6FA;color:var(--t3)}
-.modal-btn-ok{background:var(--orange);color:#FFF}
-.lock-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;font-family:var(--font);cursor:pointer;border:1.5px solid;transition:all .15s;white-space:nowrap}
-.lock-btn.locked{color:var(--t3);background:#F2F6FA;border-color:var(--border)}
-.lock-btn.locked:hover{border-color:var(--orange);color:var(--orange)}
-.lock-btn.unlocked{color:#396731;background:#ECF3EC;border-color:#AED7AC}
-.save-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);display:inline-block;animation:pulse 1s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-body.locked .status-btn,body.locked .kpi-toggle,body.locked .date-input{opacity:.5;cursor:not-allowed;pointer-events:none}
-body.locked .kpi-input{opacity:.5;cursor:not-allowed;background:#F2F6FA}
 </style>
 </head>
 <body>
@@ -242,9 +174,6 @@ body.locked .kpi-input{opacity:.5;cursor:not-allowed;background:#F2F6FA}
 </div>
 
 <script>
-// ──────────────────────────────────────────────────
-// DATA
-// ──────────────────────────────────────────────────
 const QUARTERS=[
   {id:'Q1.1',label:'Q1.1',color:'#F93846',name:'Fundamentação e Estruturação Básica',period:'Junho – Agosto 2026',phases:[
     {id:'P01',num:'01',name:'Diagnóstico e Alinhamento Estratégico',responsible:'Gestor(a) de RH',
@@ -270,12 +199,11 @@ const QUARTERS=[
     {id:'P03',num:'03',name:'Base de Gestão de Pessoas e IA',responsible:'Gestor(a) de RH',
      participants:['Equipe de TI','Liderança Executiva','Gestores de Tecnologia e CS'],
      marcos:['Base de Gestão de Pessoas implementada','IA integrada na gestão de documentos','Desenho inicial de níveis hierárquicos e autonomia'],
-     kpis:[{id:'P03-k0',text:'HRIS/Cloud com dados de 100% dos colaboradores',type:'percent',target:100},{id:'P03-k1',text:'Ferramenta de IA para documentos configurada e em uso pelo RH',type:'binary'},{id:'P03-k2',text:'Esboço de níveis hierárquicos e autonomia para Tecnologia e CS',type:'binary'},{id:'P03-k3',text:'% de políticas essenciais criadas e aprovadas',type:'percent',target:100}],
-     goals:['Implementar a Base de Gestão de Pessoas (Cloud)','Integrar IA na gestão de documentos','Apresentar desenho inicial de níveis para validação'],
+     kpis:[{id:'P03-k2',text:'Esboço de níveis hierárquicos e autonomia para Tecnologia e CS',type:'binary'},{id:'P03-k3',text:'% de políticas essenciais criadas e aprovadas',type:'percent',target:100}],
+     goals:['Implementar a Base de Gestão de Pessoas (Cloud)','Apresentar desenho inicial de níveis para validação'],
      items:[
       {id:'3.1',name:'Estrutura de Gestão e Segurança de Dados',wr:'Sem. 6–9',period:'Jul – Ago',ws:6,we:9,desc:'Migração de dados, perfis de acesso, política de segurança junto ao jurídico.',bullets:['Migração inicial de dados','Perfis de acesso e segurança','Finalização das políticas e implementação da política de segurança de dados junto ao jurídico']},
-      {id:'3.2',name:'Integração de IA na Gestão de Documentos',wr:'Sem. 9–11',period:'Agosto',ws:9,we:11,desc:'Categorização automática, busca inteligente, sumarização.',bullets:['IA para categorização automática de documentos','Busca inteligente por palavras-chave e conteúdo','Sumarização de políticas com IA']},
-      {id:'3.3',name:'Desenho Inicial de Níveis Hierárquicos e Autonomia',wr:'Sem. 10–12',period:'Agosto',ws:10,we:12,desc:'Estrutura Júnior → Liderança, indicadores de autonomia.',bullets:['Mapeamento das principais funções e responsabilidades','Estrutura de níveis: Júnior, Pleno, Sênior, Especialista, Liderança','Indicadores de autonomia esperada para cada nível']}
+      {id:'3.2',name:'Desenho Inicial de Níveis Hierárquicos e Autonomia',wr:'Sem. 10–12',period:'Agosto',ws:10,we:12,desc:'Estrutura Júnior → Liderança, indicadores de autonomia.',bullets:['Mapeamento das principais funções e responsabilidades','Estrutura de níveis: Júnior, Pleno, Sênior, Especialista, Liderança','Indicadores de autonomia esperada para cada nível']}
     ]}
   ]},
   {id:'Q1.2',label:'Q1.2',color:'#FF5C35',name:'Desenvolvimento de Lideranças e Performance',period:'Agosto – Outubro 2026',phases:[
@@ -372,8 +300,6 @@ const QUARTERS=[
   ]}
 ];
 
-
-// STATUS CONFIG
 const ST_CFG={
   pending:    {label:'Pendente',    color:'#B25A0E',bg:'#FEF6E1',ring:'#FFD189',dot:'#EF7F0A'},
   in_progress:{label:'Em Andamento',color:'#BC3B10',bg:'#FDE1D8',ring:'#FEA081',dot:'#FF5C35'},
@@ -384,7 +310,6 @@ const STORAGE_KEY='lets-rh-2026';
 const KPI_KEY='lets-rh-2026-kpis';
 let API_URL='https://script.google.com/macros/s/AKfycbylMzdEqgWtvdXLOzhDrLElJMc3LV4V6mtLI6-I5Rh-RgEt592oghVnqo_RpNBDulp0/exec';
 
-// STATE
 const S={
   tab:'dashboard',
   taskSts:{},kpiVals:{},
@@ -396,7 +321,6 @@ const S={
 };
 if(S.editKey)S.editMode=true;
 
-// ─── JSONP (contorna CORS do Google Apps Script) ─────────
 function jsonp(url){
   return new Promise((resolve,reject)=>{
     const cb='_gs_'+Date.now();
@@ -410,7 +334,6 @@ function jsonp(url){
   });
 }
 
-// ─── STORAGE / API ───────────────────────────────
 async function loadData(){
   if(!API_URL){loadLocal();render();return;}
   try{
@@ -462,13 +385,11 @@ async function setDateFn(id,val){
   await apiCall({action:'updateTask',id,status:getSt(id),completedAt:val});
 }
 
-// HELPERS
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 function chip(label,color,bg,border){border=border||color+'40';bg=bg||color+'15';return`<span class="chip" style="color:${color};background:${bg};border-color:${border}">${esc(label)}</span>`;}
 function pbar(pct,color,h=6,bg='#EAF0F6'){return`<div class="pbar-wrap" style="height:${h}px;background:${bg}"><div class="pbar-fill" style="height:${h}px;width:${Math.min(pct,100)}%;background:${color}"></div></div>`;}
 function statusBtn(id,status){const s=ST_CFG[status];return`<button class="status-btn" data-action="cycle" data-id="${id}" style="color:${s.color};background:${s.bg};border-color:${s.ring}"><span style="width:6px;height:6px;border-radius:50%;background:${s.dot};display:inline-block;flex-shrink:0"></span>&nbsp;${s.label}</button>`;}
 
-// ──────── HEADER ────────
 function renderHeader(){
   const all=allItems(),done=all.filter(i=>getSt(i.id)==='done').length,ip=all.filter(i=>getSt(i.id)==='in_progress').length;
   const pct=Math.round(done/all.length*100);
@@ -506,13 +427,11 @@ function renderHeader(){
   </header>`;
 }
 
-// ──────── NAV ────────
 function renderNav(){
   const tabs=[['dashboard','Visão Geral'],['tasks','Tarefas'],['indicadores','Indicadores'],['details','Detalhes'],['timeline','Linha do Tempo']];
   return`<nav class="nav">${tabs.map(([id,lbl])=>`<button class="tab-btn${S.tab===id?' active':''}" data-action="tab" data-id="${id}">${lbl}</button>`).join('')}</nav>`;
 }
 
-// ──────── DASHBOARD ────────
 function renderDashboard(){
   const all=allItems(),done=all.filter(i=>getSt(i.id)==='done').length,ip=all.filter(i=>getSt(i.id)==='in_progress').length,pct=Math.round(done/all.length*100);
   const ka=allKpis(),kDone=ka.filter(k=>isKpiOk(k)).length,kPct=Math.round(kDone/ka.length*100);
@@ -536,7 +455,6 @@ function renderDashboard(){
   return`<div class="flex-col gap-24"><div class="grid-4">${statCards}</div><div class="card p-22"><div class="flex justify-between items-center mb-14"><div><div class="text-sm font-7">Progresso Geral — Implementação RH 2026</div><div class="text-xs text-muted mt-3">Semanas 1–28 · Junho a Dezembro de 2026</div></div><div style="font-size:36px;font-weight:800;color:var(--orange)">${pct}<span style="font-size:15px;color:var(--t4)">%</span></div></div>${pbar(pct,'var(--orange)',10)}<div class="flex gap-20 mt-10 flex-wrap">${[['#45893D','Concluído',done],['#FF5C35','Em Andamento',ip],['#EF7F0A','Pendente',all.length-done-ip]].map(([c,l,v])=>`<div class="flex items-center gap-6"><span style="width:7px;height:7px;border-radius:50%;background:${c};flex-shrink:0;display:inline-block"></span><span class="text-xs text-muted">${l}: <strong style="color:var(--t1)">${v}</strong></span></div>`).join('')}</div></div><div><div class="section-label">Progresso por Trimestre</div><div class="grid-2">${qCards}</div></div>${upcoming.length>0?`<div><div class="section-label">Próximas Entregas</div><div class="card ovh">${upRows}</div></div>`:''}</div>`;
 }
 
-// ──────── TASKS ────────
 function renderTasks(){
   const f=S.filters;
   const filtered=QUARTERS.filter(q=>f.q==='all'||q.id===f.q).map(q=>({...q,phases:q.phases.map(p=>({...p,items:p.items.filter(i=>{
@@ -563,7 +481,6 @@ function renderTasks(){
   return`<div><div class="filter-row"><input type="text" class="finput" placeholder="🔍  Buscar entregável..." value="${esc(f.search)}" data-action="search" id="search-input" style="flex:1 1 200px;min-width:180px"/><select class="finput" data-action="filter-q" style="${IS}"><option value="all"${f.q==='all'?' selected':''}>Todos os trimestres</option>${qOpts}</select><select class="finput" data-action="filter-st" style="${IS}"><option value="all"${f.st==='all'?' selected':''}>Todos os status</option>${stOpts}</select><span class="text-xs text-muted nowrap">${count} entrega${count!==1?'s':''}</span></div><div class="hint-box">💡 Clique no nome para ver a descrição · Clique no badge de status para alterar · Preencha a data ao concluir</div>${sections||'<div style="text-align:center;color:var(--t4);padding:60px 20px">Nenhum resultado encontrado.</div>'}</div>`;
 }
 
-// ──────── INDICADORES ────────
 function renderIndicadores(){
   const fq=S.filters.kpiQ||'all';
   const IS='background:#FFF;border:1px solid var(--border);border-radius:8px;color:var(--t2);font-size:12px;padding:8px 12px;font-family:var(--font);outline:none';
@@ -589,7 +506,6 @@ function renderIndicadores(){
   return`<div class="flex-col gap-24"><div class="grid-4">${statCards}</div><div class="card p-22"><div class="flex justify-between items-center mb-14"><div><div class="text-sm font-7">Progresso dos Indicadores de Sucesso</div><div class="text-xs text-muted mt-3">${kDone} de ${ka.length} KPIs atingidos</div></div><div style="font-size:36px;font-weight:800;color:#545AD4">${kPct}<span style="font-size:15px;color:var(--t4)">%</span></div></div>${pbar(kPct,'#545AD4',10)}</div><div><div class="section-label">KPIs por Trimestre</div><div class="grid-2">${qSummary}</div></div><div><div class="flex items-center gap-14 mb-14 flex-wrap"><div class="section-label" style="margin-bottom:0">Registro por Fase</div><select class="finput" data-action="filter-kq" style="${IS}"><option value="all"${fq==='all'?' selected':''}>Todos os trimestres</option>${qOpts}</select><span class="hint-box" style="margin-bottom:0;flex:1">💡 Para KPIs numéricos, insira o valor atual em %. Para KPIs binários, clique para marcar como concluído.</span></div>${phaseSections}</div></div>`;
 }
 
-// ──────── DETAILS ────────
 function renderDetails(){
   const fq=S.filters.detailQ||'all';
   const qOpts=QUARTERS.map(q=>`<option value="${q.id}"${fq===q.id?' selected':''}>${q.label} — ${esc(q.name)}</option>`).join('');
@@ -604,7 +520,6 @@ function renderDetails(){
   return`<div><div class="filter-row"><select class="finput" data-action="filter-dq"><option value="all"${fq==='all'?' selected':''}>Todos os trimestres</option>${qOpts}</select><span class="text-xs text-muted">Visão completa — todos os campos da planilha</span></div>${sections}</div>`;
 }
 
-// ──────── TIMELINE ────────
 function renderTimeline(){
   const W=28;
   const MONTHS=[{l:'Junho',n:4},{l:'Julho',n:4},{l:'Agosto',n:4},{l:'Setembro',n:4},{l:'Outubro',n:4},{l:'Novembro',n:5},{l:'Dezembro',n:3}];
@@ -626,7 +541,6 @@ function renderTimeline(){
   return`<div class="timeline-wrap"><div style="min-width:900px"><div class="tl-month-row mb-4">${mRow}</div><div class="tl-week-row" style="margin-bottom:14px">${wRow}</div>${rows}<div class="tl-legend">${leg}</div></div></div>`;
 }
 
-// ──────── RENDER ────────
 function render(){
   const sf=document.activeElement?.id==='search-input';
   const views={dashboard:renderDashboard,tasks:renderTasks,indicadores:renderIndicadores,details:renderDetails,timeline:renderTimeline};
@@ -635,7 +549,6 @@ function render(){
   if(sf&&S.tab==='tasks'){const el=document.getElementById('search-input');if(el){el.focus();const v=el.value.length;el.setSelectionRange(v,v);}}
 }
 
-// ──────── EVENTS ────────
 document.addEventListener('click', async e=>{
   const el=e.target.closest('[data-action]');if(!el)return;
   const{action,id}=el.dataset;
@@ -695,7 +608,6 @@ document.addEventListener('input',e=>{
   if(e.target.id==='search-input'){S.filters.search=e.target.value;render();}
 });
 
-// ──────── MODAL ────────
 function showModal(){
   const m=document.getElementById('edit-modal');
   if(m){m.style.display='flex';document.getElementById('modal-pass').value='';document.getElementById('modal-error').style.display='none';document.getElementById('modal-pass').focus();}
@@ -724,12 +636,9 @@ document.getElementById('modal-cancel').addEventListener('click',hideModal);
 document.getElementById('modal-pass').addEventListener('keydown',e=>{if(e.key==='Enter')confirmLogin();});
 document.getElementById('edit-modal').addEventListener('click',e=>{if(e.target===e.currentTarget)hideModal();});
 
-// ──────── INIT ────────
 document.body.classList.add('locked');
 render();
 loadData();
 </script>
-
-
 
 </body></html>
