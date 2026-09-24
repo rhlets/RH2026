@@ -188,13 +188,12 @@ const QUARTERS=[
     ]},
     {id:'P02',num:'02',name:'Onboarding, Integração e Processos',responsible:'Gestor(a) de RH',
      participants:['Gestores de Tecnologia e CS','Novos Colaboradores','Financeiro'],
-     marcos:['Programa de Onboarding estruturado e piloto realizado','VMMV formalizados e comunicados'],
-     kpis:[{id:'P02-k0',text:'% de novos colaboradores pelo onboarding piloto',type:'percent',target:100},{id:'P02-k1',text:'% de colaboradores que acessaram o Manual de Benefícios',type:'percent',target:null},{id:'P02-k2',text:'Feedback positivo dos participantes do piloto',type:'binary'},{id:'P02-k3',text:'% de VMMV e Manifesto Cultural aprovados pela liderança',type:'percent',target:100}],
-     goals:['Desenvolver e testar o programa de onboarding','Iniciar a estrutura de VMMV','Criar políticas iniciais de admissão, benefícios e processos de RH'],
+     marcos:['Programa de Onboarding estruturado e piloto realizado'],
+     kpis:[{id:'P02-k0',text:'% de novos colaboradores pelo onboarding piloto',type:'percent',target:100},{id:'P02-k1',text:'% de colaboradores que acessaram o Manual de Benefícios',type:'percent',target:null},{id:'P02-k2',text:'Feedback positivo dos participantes do piloto',type:'binary'}],
+     goals:['Desenvolver e testar o programa de onboarding','Criar políticas iniciais de admissão, benefícios e processos de RH'],
      items:[
       {id:'2.1',name:'Desenvolvimento do Programa de Onboarding',wr:'Sem. 5–6',period:'Julho',ws:5,we:6,desc:'Roteiro pré-boarding → 1º mês, kit de boas-vindas digital.',bullets:['Criação de roteiro de onboarding (pré-boarding, 1º dia, 1ª semana, 1º mês)','Conteúdo: cultura, VMMV, políticas, apresentação da empresa, áreas e ferramentas','Desenvolvimento de kit de boas-vindas digital']},
-      {id:'2.2',name:'Criação Inicial de Políticas de RH',wr:'Sem. 6–8',period:'Julho',ws:6,we:8,desc:'Políticas iniciais de admissão, benefícios e processos administrativos de RH.',bullets:['Política de admissão de novos colaboradores','Política de benefícios','Política de férias','Política de alteração de salário','Política de alteração de cadastro']},
-      {id:'2.3',name:'Formalização de VMMV e Cultura',wr:'Sem. 5–7',period:'Julho',ws:5,we:7,desc:'Workshops de co-criação com liderança, Manifesto Cultural.',bullets:['Workshops com a liderança para co-criação da Visão, Missão e Valores','Definição de quem queremos ser como cultura','Elaboração de Manifesto Cultural ou Princípios de Cultura']}
+      {id:'2.2',name:'Criação Inicial de Políticas de RH',wr:'Sem. 6–8',period:'Julho',ws:6,we:8,desc:'Políticas iniciais de admissão, benefícios e processos administrativos de RH.',bullets:['Política de admissão de novos colaboradores','Política de benefícios','Política de férias','Política de alteração de salário','Política de alteração de cadastro']}
     ]},
     {id:'P03',num:'03',name:'Base de Gestão de Pessoas e IA',responsible:'Gestor(a) de RH',
      participants:['Equipe de TI','Liderança Executiva','Gestores de Tecnologia e CS'],
@@ -207,98 +206,112 @@ const QUARTERS=[
     ]}
   ]},
   {id:'Q1.2',label:'Q1.2',color:'#FF5C35',name:'Desenvolvimento de Lideranças e Performance',period:'Agosto – Outubro 2026',phases:[
-    {id:'P04',num:'04',name:'Capacitação de Lideranças',responsible:'Gestor(a) de RH',
+    {id:'P04',num:'04',name:'Mapeamento Organizacional',responsible:'Gestor(a) de RH',
+     participants:['Liderança Executiva','Gestores de Tecnologia e CS','Equipe de TI','Colaboradores Chave'],
+     marcos:['Mapeamento de rotinas e dificuldades concluído','Panorama de uso de IA na companhia mapeado'],
+     kpis:[{id:'P04-k0',text:'% de áreas/setores mapeados',type:'percent',target:100}],
+     goals:['Mapear rotinas, dificuldades, tempo e uso de IA em toda a companhia'],
+     items:[
+      {id:'4.1',name:'Mapeamento Organizacional de Rotinas e Uso de IA',wr:'Sem. 9–16',period:'Ago – Set',ws:9,we:16,desc:'Mapeamento de rotinas, dificuldades, tempo e uso de IA da companhia de forma geral.',bullets:['Mapeamento das rotinas de trabalho por área','Identificação de dificuldades e gargalos operacionais','Levantamento do tempo dedicado a cada rotina','Mapeamento do uso atual de IA na companhia']}
+    ]},
+    {id:'P05',num:'05',name:'Avaliação 360°',responsible:'Gestor(a) de RH',
+     participants:['Gestores de Tecnologia e CS','Colaboradores','Liderança Executiva'],
+     marcos:['Ciclo de Avaliação 360° concluído'],
+     kpis:[{id:'P05-k0',text:'% de colaboradores na Avaliação 360°',type:'percent',target:80},{id:'P05-k1',text:'% de colaboradores com plano de ação pós-360°',type:'percent',target:null}],
+     goals:['Concluir o 1º ciclo de Avaliação 360°'],
+     items:[
+      {id:'5.1',name:'Implementação da Avaliação 360°',wr:'Sem. 17–18',period:'Outubro',ws:17,we:18,desc:'Competências, ferramenta, treinamento, 1º ciclo, devolutivas.',bullets:['Competências avaliadas alinhadas aos VMMV','Ferramenta para Avaliação 360° (HRIS ou dedicada)','Treinamento para gestores e colaboradores','Realização do 1º ciclo','Sessões de devolutiva']}
+    ]},
+    {id:'P06',num:'06',name:'Capacitação de Lideranças',responsible:'Gestor(a) de RH',
      participants:['Gestores de Tecnologia e CS','Liderança Executiva','Colaboradores'],
      marcos:['PDL iniciado','Cultura de feedback contínuo implementada'],
-     kpis:[{id:'P04-k0',text:'% de gestores nos módulos iniciais do PDL',type:'percent',target:80},{id:'P04-k1',text:'% de colaboradores no treinamento de feedback',type:'percent',target:70},{id:'P04-k2',text:'Taxa de adesão aos Check-ins de Feedback',type:'percent',target:60},{id:'P04-k3',text:'Feedback positivo dos gestores sobre o PDL',type:'binary'}],
+     kpis:[{id:'P06-k0',text:'% de gestores nos módulos iniciais do PDL',type:'percent',target:80},{id:'P06-k1',text:'% de colaboradores no treinamento de feedback',type:'percent',target:70},{id:'P06-k2',text:'Taxa de adesão aos Check-ins de Feedback',type:'percent',target:60},{id:'P06-k3',text:'Feedback positivo dos gestores sobre o PDL',type:'binary'}],
      goals:['Iniciar o PDL com 2 módulos','Treinar 70% dos colaboradores em feedback','Implementar ferramenta de registro de feedback'],
      items:[
-      {id:'4.1',name:'Lançamento do PDL — Programa de Desenvolvimento de Lideranças',wr:'Sem. 11–13',period:'Agosto',ws:11,we:13,desc:'Módulos de liderança, feedback construtivo e alta performance.',bullets:['Módulo Liderança Essencial: comunicação, delegação, gestão de conflitos','Módulo Feedback Construtivo: dar e receber feedback estruturado','Módulo Gestão de Equipes de Alta Performance','Workshops presenciais ou online','Guia para gestores sobre como aplicar os aprendizados']},
-      {id:'4.2',name:'Implementação da Cultura de Feedback',wr:'Sem. 12–13',period:'Agosto',ws:12,we:13,desc:'Treinamento, check-ins mensais/quinzenais, ferramenta de registro.',bullets:['Treinamento para todos os colaboradores sobre dar/receber feedback','Modelo de Check-in de Feedback mensal ou quinzenal','Ferramenta para registro de feedback (módulo HRIS ou dedicada)']}
+      {id:'6.1',name:'Lançamento do PDL — Programa de Desenvolvimento de Lideranças',wr:'Sem. 18–20',period:'Outubro',ws:18,we:20,desc:'Módulos de liderança, feedback construtivo e alta performance.',bullets:['Módulo Liderança Essencial: comunicação, delegação, gestão de conflitos','Módulo Feedback Construtivo: dar e receber feedback estruturado','Módulo Gestão de Equipes de Alta Performance','Workshops presenciais ou online','Guia para gestores sobre como aplicar os aprendizados']},
+      {id:'6.2',name:'Implementação da Cultura de Feedback',wr:'Sem. 19–20',period:'Outubro',ws:19,we:20,desc:'Treinamento, check-ins mensais/quinzenais, ferramenta de registro.',bullets:['Treinamento para todos os colaboradores sobre dar/receber feedback','Modelo de Check-in de Feedback mensal ou quinzenal','Ferramenta para registro de feedback (módulo HRIS ou dedicada)']}
     ]},
-    {id:'P05',num:'05',name:'Gestão de Performance e PDI',responsible:'Gestor(a) de RH',
+    {id:'P07',num:'07',name:'Gestão de Performance e PDI',responsible:'Gestor(a) de RH',
      participants:['Gestores de Tecnologia e CS','Colaboradores','Liderança Executiva'],
      marcos:['Ciclo de Avaliação de Desempenho concluído','PDIs formalizados','Política de Retenção em desenvolvimento'],
-     kpis:[{id:'P05-k0',text:'% de colaboradores com avaliação de desempenho concluída',type:'percent',target:100},{id:'P05-k1',text:'% de colaboradores com PDI formalizado',type:'percent',target:90},{id:'P05-k2',text:'Rascunho da Política de Retenção elaborado',type:'binary'},{id:'P05-k3',text:'Feedback dos colaboradores sobre o processo de avaliação',type:'binary'}],
+     kpis:[{id:'P07-k0',text:'% de colaboradores com avaliação de desempenho concluída',type:'percent',target:100},{id:'P07-k1',text:'% de colaboradores com PDI formalizado',type:'percent',target:90},{id:'P07-k2',text:'Rascunho da Política de Retenção elaborado',type:'binary'},{id:'P07-k3',text:'Feedback dos colaboradores sobre o processo de avaliação',type:'binary'}],
      goals:['Concluir o 1º ciclo de avaliação','90% dos colaboradores com PDI','Apresentar rascunho da Política de Retenção à liderança'],
      items:[
-      {id:'5.1',name:'Implementação da Avaliação de Desempenho',wr:'Sem. 14–16',period:'Setembro',ws:14,we:16,desc:'Critérios, formulário, treinamento, 1º ciclo.',bullets:['Critérios de avaliação alinhados aos VMMV','Formulário de avaliação (HRIS ou ferramenta específica)','Treinamento para gestores sobre avaliação e feedback','Realização do 1º ciclo gestor-colaborador']},
-      {id:'5.2',name:'Formalização de PDIs',wr:'Sem. 16–17',period:'Setembro',ws:16,we:17,desc:'PDIs baseados em avaliações, ferramenta de acompanhamento.',bullets:['Orientação para criação de PDIs baseados nos resultados','Alinhamento com objetivos de carreira individuais','Ferramenta para acompanhamento dos PDIs (HRIS)']},
-      {id:'5.3',name:'Desenvolvimento da Política de Retenção',wr:'Sem. 14–16',period:'Setembro',ws:14,we:16,desc:'Pesquisa, brainstorming com liderança, elaboração.',bullets:['Pesquisa de mercado sobre retenção para PJs','Brainstorming com liderança sobre fatores de retenção','Elaboração da Política de Retenção']}
+      {id:'7.1',name:'Implementação da Avaliação de Desempenho',wr:'Sem. 19–21',period:'Outubro',ws:19,we:21,desc:'Critérios, formulário, treinamento, 1º ciclo.',bullets:['Critérios de avaliação alinhados aos VMMV','Formulário de avaliação (HRIS ou ferramenta específica)','Treinamento para gestores sobre avaliação e feedback','Realização do 1º ciclo gestor-colaborador']},
+      {id:'7.2',name:'Formalização de PDIs',wr:'Sem. 21–22',period:'Outubro',ws:21,we:22,desc:'PDIs baseados em avaliações, ferramenta de acompanhamento.',bullets:['Orientação para criação de PDIs baseados nos resultados','Alinhamento com objetivos de carreira individuais','Ferramenta para acompanhamento dos PDIs (HRIS)']},
+      {id:'7.3',name:'Desenvolvimento da Política de Retenção',wr:'Sem. 18–20',period:'Outubro',ws:18,we:20,desc:'Pesquisa, brainstorming com liderança, elaboração.',bullets:['Pesquisa de mercado sobre retenção para PJs','Brainstorming com liderança sobre fatores de retenção','Elaboração da Política de Retenção']}
     ]},
-    {id:'P06',num:'06',name:'Estrutura de Cargos e Fluxos',responsible:'Gestor(a) de RH',
+    {id:'P08',num:'08',name:'Estrutura de Cargos e Fluxos',responsible:'Gestor(a) de RH',
      participants:['Liderança Executiva','Gestores de Tecnologia e CS','Financeiro','Jurídico','Equipe de TI'],
-     marcos:['Estrutura de Cargos e Salários PJ definida','Sistema de Contratos implementado','Fluxo de aprovação de cadeiras desenhado'],
-     kpis:[{id:'P06-k0',text:'Estrutura de Cargos e Salários PJ aprovada pela liderança',type:'binary'},{id:'P06-k1',text:'Sistema de contratos com 100% dos contratos migrados',type:'percent',target:100},{id:'P06-k2',text:'Feedback dos gestores sobre a clareza da estrutura de cargos',type:'binary'}],
-     goals:['Definir e comunicar Estrutura de Cargos PJ','Implementar sistema de gestão de contratos','Desenhar e comunicar fluxo de aprovação de cadeiras'],
+     marcos:['Estrutura de Cargos e Salários PJ definida','Fluxo de aprovação de cadeiras desenhado'],
+     kpis:[{id:'P08-k0',text:'Estrutura de Cargos e Salários PJ aprovada pela liderança',type:'binary'},{id:'P08-k1',text:'Feedback dos gestores sobre a clareza da estrutura de cargos',type:'binary'}],
+     goals:['Definir e comunicar Estrutura de Cargos PJ','Desenhar e comunicar fluxo de aprovação de cadeiras'],
      items:[
-      {id:'6.1',name:'Estrutura de Cargos e Salários PJ',wr:'Sem. 15–18',period:'Set – Out',ws:15,we:18,desc:'Mapeamento, descrições, benchmarking PJ, grades, análise CLT x PJ.',bullets:['Mapeamento detalhado de cargos e funções','Descrições de cargos: responsabilidades, requisitos, competências','Benchmarking de remuneração PJ','Tabela de remuneração por nível/cargo/grades','Análise CLT x PJ','Comunicação da estrutura aos gestores']},
-      {id:'6.2',name:'Sistema de Gestão de Contratos PJ',wr:'Sem. 18–20',period:'Outubro',ws:18,we:20,desc:'Ferramenta, migração, alertas de vencimento.',bullets:['Ferramenta para controle de contratos PJ (HRIS ou dedicada)','Migração de todos os contratos existentes','Alertas para vencimento de contratos']},
-      {id:'6.3',name:'Fluxo de Aprovação de Cadeiras',wr:'Sem. 19–20',period:'Outubro',ws:19,we:20,desc:'Fluxo formal: Requisição → Análise RH → Financeiro → Executivo.',bullets:['Mapeamento do processo atual de solicitação de vagas','Fluxo: Requisição → Análise RH → Aprovação Financeira → Aprovação Executiva','Formulário padronizado','Comunicação do fluxo aos gestores']}
+      {id:'8.1',name:'Estrutura de Cargos e Salários PJ',wr:'Sem. 20–23',period:'Out – Nov',ws:20,we:23,desc:'Mapeamento, descrições, benchmarking PJ, grades, análise CLT x PJ.',bullets:['Mapeamento detalhado de cargos e funções','Descrições de cargos: responsabilidades, requisitos, competências','Benchmarking de remuneração PJ','Tabela de remuneração por nível/cargo/grades','Análise CLT x PJ','Comunicação da estrutura aos gestores']},
+      {id:'8.2',name:'Fluxo de Aprovação de Cadeiras',wr:'Sem. 23–24',period:'Novembro',ws:23,we:24,desc:'Fluxo formal: Requisição → Análise RH → Financeiro → Executivo.',bullets:['Mapeamento do processo atual de solicitação de vagas','Fluxo: Requisição → Análise RH → Aprovação Financeira → Aprovação Executiva','Formulário padronizado','Comunicação do fluxo aos gestores']}
     ]}
   ]},
   {id:'T1.1',label:'T1.1',color:'#545AD4',name:'Cultura de Desenvolvimento e Engajamento',period:'Outubro – Novembro 2026',phases:[
-    {id:'P07',num:'07',name:'Avaliação 360° e Desenvolvimento Contínuo',responsible:'Gestor(a) de RH',
+    {id:'P09',num:'09',name:'Programas de Desenvolvimento Contínuo',responsible:'Gestor(a) de RH',
      participants:['Gestores de Tecnologia e CS','Colaboradores','Liderança Executiva'],
-     marcos:['Ciclo de Avaliação 360° concluído','Programas de desenvolvimento em andamento'],
-     kpis:[{id:'P07-k0',text:'% de colaboradores na Avaliação 360°',type:'percent',target:80},{id:'P07-k1',text:'% de colaboradores com plano de ação pós-360°',type:'percent',target:null},{id:'P07-k2',text:'% de participação nos workshops/treinamentos',type:'percent',target:null},{id:'P07-k3',text:'Feedback positivo sobre a relevância dos programas',type:'binary'}],
-     goals:['Concluir o 1º ciclo de Avaliação 360°','Lançar 2 programas de desenvolvimento','Criar a biblioteca de recursos'],
+     marcos:['Programas de desenvolvimento em andamento'],
+     kpis:[{id:'P09-k0',text:'% de participação nos workshops/treinamentos',type:'percent',target:null},{id:'P09-k1',text:'Feedback positivo sobre a relevância dos programas',type:'binary'}],
+     goals:['Lançar 2 programas de desenvolvimento','Criar a biblioteca de recursos'],
      items:[
-      {id:'7.1',name:'Implementação da Avaliação 360°',wr:'Sem. 19–21',period:'Outubro',ws:19,we:21,desc:'Competências, ferramenta, treinamento, 1º ciclo, devolutivas.',bullets:['Competências avaliadas alinhadas aos VMMV','Ferramenta para Avaliação 360° (HRIS ou dedicada)','Treinamento para gestores e colaboradores','Realização do 1º ciclo','Sessões de devolutiva']},
-      {id:'7.2',name:'Programas de Desenvolvimento Contínuo',wr:'Sem. 20–22',period:'Out – Nov',ws:20,we:22,desc:'Workshops, mentoria interna, biblioteca de recursos.',bullets:['Workshops baseados nas lacunas identificadas','Mentoria interna ou coaching','Biblioteca de recursos (cursos online, artigos, livros)']}
+      {id:'9.1',name:'Programas de Desenvolvimento Contínuo',wr:'Sem. 20–22',period:'Out – Nov',ws:20,we:22,desc:'Workshops, mentoria interna, biblioteca de recursos.',bullets:['Workshops baseados nas lacunas identificadas','Mentoria interna ou coaching','Biblioteca de recursos (cursos online, artigos, livros)']}
     ]},
-    {id:'P08',num:'08',name:'Gestão de Talentos e Desligamento',responsible:'Gestor(a) de RH',
+    {id:'P10',num:'10',name:'Gestão de Talentos e Desligamento',responsible:'Gestor(a) de RH',
      participants:['Liderança Executiva','Gestores de Tecnologia e CS','Jurídico','Financeiro'],
      marcos:['Política de Desligamento estruturada','Mapeamento de Talentos iniciado','Fluxo de desligamento desenhado'],
-     kpis:[{id:'P08-k0',text:'Política de Desligamento aprovada e comunicada',type:'binary'},{id:'P08-k1',text:'% de gestores treinados em desligamento',type:'percent',target:null},{id:'P08-k2',text:'Mapeamento de talentos chave iniciado',type:'binary'},{id:'P08-k3',text:'Fluxo de aprovação documentado e comunicado',type:'binary'},{id:'P08-k4',text:'Taxa de preenchimento de entrevistas de saída',type:'percent',target:80}],
+     kpis:[{id:'P10-k0',text:'Política de Desligamento aprovada e comunicada',type:'binary'},{id:'P10-k1',text:'% de gestores treinados em desligamento',type:'percent',target:null},{id:'P10-k2',text:'Mapeamento de talentos chave iniciado',type:'binary'},{id:'P10-k3',text:'Fluxo de aprovação documentado e comunicado',type:'binary'},{id:'P10-k4',text:'Taxa de preenchimento de entrevistas de saída',type:'percent',target:80}],
      goals:['Formalizar Política de Desligamento','Iniciar mapeamento de talentos e sucessão','Desenhar fluxo de aprovação de desligamento'],
      items:[
-      {id:'8.1',name:'Política de Desligamento',wr:'Sem. 22–23',period:'Novembro',ws:22,we:23,desc:'Política humanizada, treinamento, entrevista de saída.',bullets:['Política humanizada e transparente','Treinamento para gestores sobre desligamento','Formulário de entrevista de saída','Comunicação da política']},
-      {id:'8.2',name:'Mapeamento de Talentos e Sucessão',wr:'Sem. 23–25',period:'Novembro',ws:23,we:25,desc:'Posições críticas, Nine Box Grid, planejamento de sucessão.',bullets:['Identificação de posições críticas e talentos chave','Nine Box Grid para avaliar potencial e performance','Planejamento de sucessão para posições estratégicas']},
-      {id:'8.3',name:'Fluxo de Aprovação de Desligamento',wr:'Sem. 22–24',period:'Novembro',ws:22,we:24,desc:'Fluxo: Gestor → RH → Liderança → Jurídico → Financeiro.',bullets:['Mapeamento do processo atual','Fluxo formal com todos os aprovadores','Formulário padronizado','Comunicação do fluxo']}
+      {id:'10.1',name:'Política de Desligamento',wr:'Sem. 22–23',period:'Novembro',ws:22,we:23,desc:'Política humanizada, treinamento, entrevista de saída.',bullets:['Política humanizada e transparente','Treinamento para gestores sobre desligamento','Formulário de entrevista de saída','Comunicação da política']},
+      {id:'10.2',name:'Mapeamento de Talentos e Sucessão',wr:'Sem. 23–25',period:'Novembro',ws:23,we:25,desc:'Posições críticas, Nine Box Grid, planejamento de sucessão.',bullets:['Identificação de posições críticas e talentos chave','Nine Box Grid para avaliar potencial e performance','Planejamento de sucessão para posições estratégicas']},
+      {id:'10.3',name:'Fluxo de Aprovação de Desligamento',wr:'Sem. 22–24',period:'Novembro',ws:22,we:24,desc:'Fluxo: Gestor → RH → Liderança → Jurídico → Financeiro.',bullets:['Mapeamento do processo atual','Fluxo formal com todos os aprovadores','Formulário padronizado','Comunicação do fluxo']}
     ]},
-    {id:'P09',num:'09',name:'Clima e Comunicação Interna',responsible:'Gestor(a) de RH',
+    {id:'P11',num:'11',name:'Comunicação Interna e Endomarketing',responsible:'Gestor(a) de RH',
      participants:['Liderança Executiva','Gestores de Tecnologia e CS','Colaboradores','Equipe de Marketing/Comunicação'],
-     marcos:['Pesquisa de Clima realizada','Plano de Ação em andamento','Comunicação interna fortalecida'],
-     kpis:[{id:'P09-k0',text:'% de participação na pesquisa de clima',type:'percent',target:80},{id:'P09-k1',text:'Plano de ação de clima elaborado e comunicado',type:'binary'},{id:'P09-k2',text:'% de ações do plano de clima iniciadas',type:'percent',target:null},{id:'P09-k3',text:'Feedback positivo sobre a transparência dos resultados',type:'binary'},{id:'P09-k4',text:'Ferramenta de IA para análise de sentimento em teste',type:'binary'}],
-     goals:['Pesquisa de clima com 80% de participação','Elaborar e comunicar plano de ação','Lançar newsletter interna','Iniciar IA na comunicação interna'],
+     marcos:['Comunicação interna fortalecida'],
+     kpis:[{id:'P11-k0',text:'Ferramenta de IA para análise de sentimento em teste',type:'binary'}],
+     goals:['Lançar newsletter interna','Iniciar IA na comunicação interna','Planejar ações de fim de ano e diretrizes de comunicação para o próximo ano'],
      items:[
-      {id:'9.1',name:'Pesquisa de Clima Organizacional',wr:'Sem. 22–24',period:'Novembro',ws:22,we:24,desc:'Ferramenta, perguntas sobre engajamento/liderança, coleta e análise.',bullets:['Ferramenta para pesquisa de clima (SurveyMonkey, Typeform)','Perguntas sobre engajamento, liderança, cultura, ambiente e benefícios','Coleta de dados e análise de resultados','Elaboração de relatório']},
-      {id:'9.2',name:'Plano de Ação Pós-Pesquisa de Clima',wr:'Sem. 24–25',period:'Novembro',ws:24,we:25,desc:'Apresentação de resultados, plano de ação, grupos de trabalho.',bullets:['Apresentação transparente à liderança e colaboradores','Plano de ação para pontos de melhoria','Grupos de trabalho para implementar as ações']},
-      {id:'9.3',name:'Fortalecimento da Comunicação Interna',wr:'Sem. 23–25',period:'Novembro',ws:23,we:25,desc:'Calendário editorial, Newsletter, IA para análise de sentimento.',bullets:['Avaliação dos canais de comunicação existentes','Calendário editorial interno','Newsletter Interna ou canal de notícias','IA para análise de sentimento no Slack']}
+      {id:'11.1',name:'Fortalecimento da Comunicação Interna e Endomarketing',wr:'Sem. 23–25',period:'Novembro',ws:23,we:25,desc:'Calendário editorial, Newsletter, IA para análise de sentimento, planejamento de ações de fim de ano e diretrizes para o próximo ano.',bullets:['Avaliação dos canais de comunicação existentes','Calendário editorial interno','Newsletter Interna ou canal de notícias','IA para análise de sentimento no Slack','Planejamento de ações de fim de ano e endomarketing','Diretrizes de comunicação interna para o próximo ano']}
     ]}
   ]},
   {id:'T1.2',label:'T1.2',color:'#2F75A0',name:'Otimização, Inovação e Sustentabilidade',period:'Dezembro 2026',phases:[
-    {id:'P10',num:'10',name:'Otimização de Processos e IA',responsible:'Gestor(a) de RH',
+    {id:'P12',num:'12',name:'Otimização de Processos e IA',responsible:'Gestor(a) de RH',
      participants:['Equipe de TI','Gestores de Tecnologia e CS','Liderança Executiva'],
-     marcos:['Processos otimizados e automatizados','IA em R&S implementada','Centralização aprimorada com IA'],
-     kpis:[{id:'P10-k0',text:'% de processos de RH com automação implementada',type:'percent',target:30},{id:'P10-k1',text:'Ferramenta de IA para R&S em uso',type:'binary'},{id:'P10-k2',text:'Funcionalidades avançadas de IA no repositório ativas',type:'binary'},{id:'P10-k3',text:'Redução do tempo médio de triagem de currículos',type:'binary'},{id:'P10-k4',text:'Feedback positivo do RH sobre eficiência das automações',type:'binary'}],
-     goals:['Automatizar 30% dos processos de RH','Implementar IA em R&S','Aprimorar centralização com IA'],
+     marcos:['Processos otimizados e automatizados','IA em R&S implementada','Centralização aprimorada com IA','Sistema de Contratos implementado'],
+     kpis:[{id:'P12-k0',text:'% de processos de RH com automação implementada',type:'percent',target:30},{id:'P12-k1',text:'Ferramenta de IA para R&S em uso',type:'binary'},{id:'P12-k2',text:'Funcionalidades avançadas de IA no repositório ativas',type:'binary'},{id:'P12-k3',text:'Redução do tempo médio de triagem de currículos',type:'binary'},{id:'P12-k4',text:'Feedback positivo do RH sobre eficiência das automações',type:'binary'},{id:'P12-k5',text:'Sistema de contratos com 100% dos contratos migrados',type:'percent',target:100}],
+     goals:['Automatizar 30% dos processos de RH','Implementar IA em R&S','Aprimorar centralização com IA','Implementar sistema de gestão de contratos'],
      items:[
-      {id:'10.1',name:'Otimização e Automação de Processos de RH',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Revisão de processos, gargalos, automações.',bullets:['Revisão de todos os processos implementados','Identificação de gargalos e oportunidades de automação','Automações: e-mails, workflows, integrações entre sistemas']},
-      {id:'10.2',name:'Integração de IA em Recrutamento e Seleção',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Triagem por IA, análise de perfis, chatbots.',bullets:['IA para triagem de currículos','Análise de perfil de candidatos','Chatbots para candidatos e FAQ','Treinamento do RH']},
-      {id:'10.3',name:'Centralização de Informações com IA Avançada',wr:'Sem. 26–28',period:'Dezembro',ws:26,we:28,desc:'Busca semântica, sumarização automática, relatórios.',bullets:['Busca semântica no repositório Cloud','Sumarização automática de documentos','Geração de relatórios e insights com IA']}
+      {id:'12.1',name:'Otimização e Automação de Processos de RH',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Revisão de processos, gargalos, automações.',bullets:['Revisão de todos os processos implementados','Identificação de gargalos e oportunidades de automação','Automações: e-mails, workflows, integrações entre sistemas']},
+      {id:'12.2',name:'Integração de IA em Recrutamento e Seleção',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Triagem por IA, análise de perfis, chatbots.',bullets:['IA para triagem de currículos','Análise de perfil de candidatos','Chatbots para candidatos e FAQ','Treinamento do RH']},
+      {id:'12.3',name:'Centralização de Informações com IA Avançada',wr:'Sem. 26–28',period:'Dezembro',ws:26,we:28,desc:'Busca semântica, sumarização automática, relatórios.',bullets:['Busca semântica no repositório Cloud','Sumarização automática de documentos','Geração de relatórios e insights com IA']},
+      {id:'12.4',name:'Sistema de Gestão de Contratos PJ',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Ferramenta, migração, alertas de vencimento.',bullets:['Ferramenta para controle de contratos PJ (HRIS ou dedicada)','Migração de todos os contratos existentes','Alertas para vencimento de contratos']}
     ]},
-    {id:'P11',num:'11',name:'Avaliação de Liderança e Reconhecimento',responsible:'Gestor(a) de RH',
+    {id:'P13',num:'13',name:'Avaliação de Liderança e Reconhecimento',responsible:'Gestor(a) de RH',
      participants:['Liderança Executiva','Gestores de Tecnologia e CS','Colaboradores','Financeiro'],
      marcos:['Política de Avaliação do Gestor implementada'],
-     kpis:[{id:'P11-k0',text:'% de gestores avaliados pelos colaboradores',type:'percent',target:90}],
+     kpis:[{id:'P13-k0',text:'% de gestores avaliados pelos colaboradores',type:'percent',target:90}],
      goals:['Implementar a Política de Avaliação do Gestor'],
      items:[
-      {id:'11.1',name:'Política de Avaliação do Gestor pelos Colaboradores',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Critérios, ferramenta, 1º ciclo, devolutivas.',bullets:['Critérios: liderança, comunicação, desenvolvimento, feedback','Ferramenta (HRIS ou dedicada)','Lançamento do 1º ciclo','Sessões de devolutiva e planos de desenvolvimento']}
+      {id:'13.1',name:'Política de Avaliação do Gestor pelos Colaboradores',wr:'Sem. 26–27',period:'Dezembro',ws:26,we:27,desc:'Critérios, ferramenta, 1º ciclo, devolutivas.',bullets:['Critérios: liderança, comunicação, desenvolvimento, feedback','Ferramenta (HRIS ou dedicada)','Lançamento do 1º ciclo','Sessões de devolutiva e planos de desenvolvimento']}
     ]},
-    {id:'P12',num:'12',name:'Planejamento Estratégico e Sustentabilidade',responsible:'Gestor(a) de RH',
+    {id:'P14',num:'14',name:'Planejamento Estratégico e Sustentabilidade',responsible:'Gestor(a) de RH',
      participants:['Liderança Executiva','Gestores de Tecnologia e CS','Equipe de TI','Financeiro'],
      marcos:['Planejamento Estratégico de RH para o próximo ano','Dashboard de KPIs consolidado','Base de Gestão de Pessoas completa'],
-     kpis:[{id:'P12-k0',text:'Plano Estratégico de RH para o próximo ano aprovado',type:'binary'},{id:'P12-k1',text:'Dashboard de KPIs atualizado e apresentado mensalmente',type:'binary'},{id:'P12-k2',text:'HRIS/Cloud com 100% dos dados e funcionalidades ativas',type:'binary'},{id:'P12-k3',text:'Feedback positivo da liderança sobre a contribuição do RH',type:'binary'}],
+     kpis:[{id:'P14-k0',text:'Plano Estratégico de RH para o próximo ano aprovado',type:'binary'},{id:'P14-k1',text:'Dashboard de KPIs atualizado e apresentado mensalmente',type:'binary'},{id:'P14-k2',text:'HRIS/Cloud com 100% dos dados e funcionalidades ativas',type:'binary'},{id:'P14-k3',text:'Feedback positivo da liderança sobre a contribuição do RH',type:'binary'}],
      goals:['Apresentar o Plano Estratégico de RH','Consolidar e apresentar dashboard de KPIs','Garantir plena funcionalidade do HRIS (Cloud)'],
      items:[
-      {id:'12.1',name:'Planejamento Estratégico de RH Anual',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'Revisão dos resultados, objetivos, metas, orçamento.',bullets:['Revisão dos resultados do ano','Objetivos e metas para o próximo ciclo','Orçamento de RH para o próximo ano']},
-      {id:'12.2',name:'Dashboard de Indicadores de RH (KPIs)',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'Dashboard completo no HRIS/Power BI, apresentação à liderança.',bullets:['Dashboard completo de KPIs (HRIS, Power BI ou outra ferramenta)','Apresentação regular dos resultados à liderança']},
-      {id:'12.3',name:'Base de Gestão de Pessoas (Cloud) Completa',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'HRIS totalmente funcional, dados migrados, IA otimizada.',bullets:['HRIS totalmente funcional','100% dos dados migrados e processos integrados','Documentação completa de todos os processos']}
+      {id:'14.1',name:'Planejamento Estratégico de RH Anual',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'Revisão dos resultados, objetivos, metas, orçamento.',bullets:['Revisão dos resultados do ano','Objetivos e metas para o próximo ciclo','Orçamento de RH para o próximo ano']},
+      {id:'14.2',name:'Dashboard de Indicadores de RH (KPIs)',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'Dashboard completo no HRIS/Power BI, apresentação à liderança.',bullets:['Dashboard completo de KPIs (HRIS, Power BI ou outra ferramenta)','Apresentação regular dos resultados à liderança']},
+      {id:'14.3',name:'Base de Gestão de Pessoas (Cloud) Completa',wr:'Sem. 28',period:'Dezembro',ws:28,we:28,desc:'HRIS totalmente funcional, dados migrados, IA otimizada.',bullets:['HRIS totalmente funcional','100% dos dados migrados e processos integrados','Documentação completa de todos os processos']}
     ]}
   ]}
 ];
+
 
 const ST_CFG={
   pending:    {label:'Pendente',    color:'#B25A0E',bg:'#FEF6E1',ring:'#FFD189',dot:'#EF7F0A'},
